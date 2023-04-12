@@ -2,6 +2,7 @@ let keyCode = document.querySelector(".keyCode");
 let keyElement = document.querySelector(".key");
 console.log(keyElement)
 let items = document.querySelectorAll(".hitem");
+let historyItems = document.querySelector(".historyItems")
 let empty = document.querySelector(".empty")
 
 console.log(items);
@@ -19,6 +20,7 @@ function addHistory(a,keyCode,key) {
     } else if (a<7){
         a = a-1
         empty.style.display = "none";
+        historyItems.style.overflowY = "auto"
         items[a].style.visibility = "visible"
         console.log(items[a].children);
         items[a].children[0].textContent = previousKeyCode;
