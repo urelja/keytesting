@@ -131,7 +131,7 @@ body {
 
 @media screen and (max-width: 1562px) {
 	.keyCode {
-		font-size: 7em;
+		font-size: 6em;
 	}
 	.historyItems {
 		justify-content: start;
